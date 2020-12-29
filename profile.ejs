@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<body>
+    <%- include ('common/nav')-%>
+    <h1>Welcome! <%= name%></h1><br>
+    <br>
+    <h1>EMAIL: <%= data.email%></h1>
+    <h1>ADDRESS: <%= data.address%></h1>
+    <h1>SKILLS: <%= data.skills%></h1>
+    <ul>
+        <% data.skills.forEach(function(item){ %>
+            <li><%=item%></li>
+        <%})%>
+    </ul>
+</body>
